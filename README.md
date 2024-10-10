@@ -47,3 +47,4 @@ In the afternoon we'll be exploring another CI tool/platform, Azure DevOps (ADO)
 
 - [Azure DevOps instructions](azure_devops.md)
 
+![example workflow](https://github.com/ike-private/DevOps-Unit-5-Workshop/actions/workflows/continuous-integration-workflow.yml/badge.svg)

@@ -89,4 +89,3 @@ To make sure people are aware when there are issues with the build, it can be us
 
 Take a look at the [GitLab Slack integration](https://docs.gitlab.com/ee/user/project/integrations/slack.html).
 
-![example workflow](https://github.com/ike-private/DevOps-Unit-5-Workshop/actions/workflows/continuous-integration-workflow.yml/badge.svg)
