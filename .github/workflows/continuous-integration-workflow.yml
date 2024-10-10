@@ -24,8 +24,7 @@ jobs:
 
     # Install node dependencies
     - name: Install dependencies
-      run: cd DotnetTemplate.Web
-      run: npm install
+      run: cd DotnetTemplate.Web npm install
 
     # Build TypeScript code
     - name: Build TypeScript project
