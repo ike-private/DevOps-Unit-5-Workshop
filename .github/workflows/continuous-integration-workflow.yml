@@ -30,6 +30,8 @@ jobs:
     # Build TypeScript code
     - name: Build TypeScript project
       run: npm run build
+      working-directory: DotnetTemplate.Web
+
     
     # Run linter on TypeScript code
     - name: Run TypeScript linter
