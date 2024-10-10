@@ -88,3 +88,5 @@ To make sure people are aware when there are issues with the build, it can be us
 **Before attempting this step please create your own personal slack workspace. This is free and can be set up [here](https://slack.com/create).**
 
 Take a look at the [GitLab Slack integration](https://docs.gitlab.com/ee/user/project/integrations/slack.html).
+
+![example workflow](https://github.com/ike-private/DevOps-Unit-5-Workshop/actions/workflows/continuous-integration-workflow.yml/badge.svg)
