@@ -6,8 +6,8 @@ on:
   pull_request:
 
 jobs:
-  build:
-    name: Build and Test
+  csharp_build:
+    name: Build and Test C#
     runs-on: ubuntu-latest
 
     steps:
@@ -22,26 +22,32 @@ jobs:
     - name: Run C# tests
       run: dotnet test 
 
-    # Install node dependencies
-    - name: Install dependencies
-      run: npm install
-      working-directory: DotnetTemplate.Web
+  dotnet_build:
+    name: Build, Lint, and Test TypeScript
+    runs-on: ubuntu-latest
 
-    # Build TypeScript code
-    - name: Build TypeScript project
-      run: npm run build
-      working-directory: DotnetTemplate.Web
+    steps:
 
-    
-    # Run linter on TypeScript code
-    - name: Run TypeScript linter
-      run: npm run lint
-      working-directory: DotnetTemplate.Web
+      # Install node dependencies
+      - name: Install dependencies
+        run: npm install
+        working-directory: DotnetTemplate.Web
+
+      # Build TypeScript code
+      - name: Build TypeScript project
+        run: npm run build
+        working-directory: DotnetTemplate.Web
+
+      
+      # Run linter on TypeScript code
+      - name: Run TypeScript linter
+        run: npm run lint
+        working-directory: DotnetTemplate.Web
 
 
-    # Run TypeScript tests
-    - name: Run TypeScript tests
-      run: npm t
-      working-directory: DotnetTemplate.Web
+      # Run TypeScript tests
+      - name: Run TypeScript tests
+        run: npm t
+        working-directory: DotnetTemplate.Web
 
 
